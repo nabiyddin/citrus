@@ -1,0 +1,23 @@
+@mixin h1-text {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+@mixin body-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin base-text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin caption-text {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@mixin ubuntu-font {
+  font-family: "Ubuntu", "sans-serif";
+}

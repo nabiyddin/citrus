@@ -1,0 +1,41 @@
+.container {
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.img_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text_aksiya {
+    @include base-text;
+    @include ubuntu-font;
+    font-weight: 700;
+  }
+
+  .price_text {
+    font-size: 11px;
+    line-height: 13px;
+    color: $orange-color;
+  }
+}
+
+.middle_text {
+  @include body-text;
+  color: $dark-black-color;
+  margin: 16px 0 4px 0;
+}
+
+.list_item li {
+  color: $gray-color;
+  @include body-text;
+  list-style: disc;
+  margin-left: 16px;
+}

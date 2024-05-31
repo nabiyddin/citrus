@@ -1,0 +1,157 @@
+.hero_section {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.cubes_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 278px;
+  left: 24px;
+
+  .first_cube_wrapper {
+    border: 2px solid $green-color;
+    border-radius: 4px;
+
+    .first_cube {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      background-color: $light-black-color;
+      border: 1px solid $white-color;
+    }
+  }
+
+  .second_cube {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: $pink-color;
+    border: 1px solid $white-color;
+  }
+}
+
+.top_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 6px;
+
+  .star_wrapper {
+    display: flex;
+    align-items: center;
+
+    .star_number {
+      @include base-text;
+      color: $gray-color;
+      margin-left: 4px;
+    }
+  }
+
+  .message_wrapper {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    .message_text {
+      color: $green-color;
+      border-bottom: 1px solid $green-color;
+      @include base-text;
+    }
+  }
+}
+
+.code {
+  @include caption-text;
+
+  span {
+    color: $gray-color;
+  }
+}
+
+.circle_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    background: $green-color;
+    border-radius: 6px;
+  }
+
+  p {
+    @include base-text;
+    color: $green-color;
+  }
+}
+
+.product_name {
+  color: $dark-black-color;
+  @include body-text;
+}
+
+.memory_wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  @include body-text;
+  margin-top: 8px;
+  margin-bottom: 12px;
+
+  .small_memory {
+    color: $dark-black-color;
+    background-color: #dbecb3;
+  }
+
+  .big_memory {
+    color: $green-color;
+    border-bottom: 1px dashed $green-color;
+  }
+}
+
+.product_price_wrapper {
+  display: flex;
+  align-items: flex-start;
+
+  .price {
+    color: $orange-color;
+    @include h1-text;
+    @include ubuntu-font;
+    font-weight: 700;
+
+    span {
+      @include body-text;
+      color: $gray-color;
+      font-family: "Arial";
+      text-decoration: line-through;
+    }
+  }
+
+  .type_of_money {
+    color: $orange-color;
+    @include ubuntu-font;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.economy {
+  color: $green-color;
+  @include base-text;
+  border-bottom: 1px solid $light-gray-color;
+  padding-bottom: 4px;
+}
+
+.icons_wrapper {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
